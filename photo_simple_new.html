@@ -1,0 +1,319 @@
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>	
+
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<script src="assets/js/bootstrap.js"></script>
+
+		<link href="assets/css/site.css" rel="stylesheet">
+		<link href="assets/css/site_mobile.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="assets/fancybox/jquery.fancybox.css">
+		<script src="assets/fancybox/jquery.fancybox.js"></script>
+		
+		<script src="assets/bxslider/jquery.bxslider.js"></script>
+		<link href="assets/bxslider/jquery.bxslider.css" rel="stylesheet" />
+		
+		<script type="text/javascript" src="assets/js/scroller.js"></script>
+		<script type="text/javascript" src="assets/js/scripts.js"></script>
+		
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+		
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+	<body>
+		<a name="top"></a>
+		<div id="mobile_menu">
+			<div onClick="mmenu_toggle();"><img src="assets/img/btn_menu.png"></div>
+				<ul id="mmenu_left">
+					<li class="mmenu_element">Сервисы<span class="sub_counter" style="display: none;">5</span><div class="sub_arrow"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+						<ul>
+							<li><a href="/">Подобрать персонал</a></li>
+							<li><a href="/">Открыть бизнес</a></li>
+							<li><a href="/">Найти работу</a></li>
+							<li><a href="/">Переехать на Дальний Восток</a></li>
+							<li><a href="/">Узнать о программе &laquo;Дальневосточный гектар&raquo;</a></li>
+						</ul>
+					</li>
+					<li class="mmenu_element">Агентство<span class="sub_counter">5</span><div class="sub_arrow" style="display: none;"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+						<ul>
+							<li><a href="/">Подменю 1</a></li>
+							<li><a href="/">Подменю 2</a></li>
+							<li><a href="/">Подменю 3</a></li>
+							<li><a href="/">Подменю 4</a></li>
+							<li><a href="/">Подменю 5</a></li>
+						</ul>
+					</li>
+					<li class="mmenu_element">Дальний Восток<span class="sub_counter">7</span><div class="sub_arrow" style="display: none;"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+						<ul>
+							<li><a href="/">Подменю 1</a></li>
+							<li><a href="/">Подменю 2</a></li>
+							<li><a href="/">Подменю 3</a></li>
+							<li><a href="/">Подменю 4</a></li>
+							<li><a href="/">Подменю 5</a></li>
+							<li><a href="/">Подменю 6</a></li>
+							<li><a href="/">Подменю 7</a></li>
+						</ul>
+					</li>
+					<li><a href="/">Исследования</a></li>
+					<li><a href="/">Истории успеха</a></li>
+					<li><a href="/">Вопрос-ответ</a></li>
+					<li class="mmenu_element">Пресс-центр<span class="sub_counter">2</span><div class="sub_arrow" style="display: none;"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+						<ul>
+							<li><a href="/">Подменю 1</a></li>
+							<li><a href="/">Подменю 2</a></li>
+						</ul>
+					</li>
+					<li><a href="/">Контакты</a></li>
+				</ul>
+			<ul id="mmenu_right">
+				<li><a href="/">Подобрать персонал</a></li>
+				<li><a href="/">Открыть бизнес</a></li>
+				<li><a href="/">Найти работу</a></li>
+				<li><a href="/">Переехать на Дальний Восток</a></li>
+				<li><a href="/">Узнать о программе &laquo;Дальневосточный гектар&raquo;</a></li><div class="sub_arrow" style="display: none;"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+			</ul>
+		</div>			
+		<section class="section-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-logobox">
+						<div class="topmenu_btn hidden-md hidden-lg hidden-xl" onClick="mmenu_toggle();" style="z-index: 2;"><img src="assets/img/btn_menu.png"></div>
+						<a class="topmenu_btn" href="/"><img src="assets/img/btn_blind.png"></a>
+						<a id="top_logo" href="/"><img src="assets/img/logo.png"></a>
+						<div id="search_box"><input id="search_input"><img src="assets/img/btn_search.png" onClick="search_toggle();" style="cursor: pointer;"></div>
+					</div>
+					<div class="col-md-7 col-infobox">
+						<div class="topmenu">
+							<a class="topmenu_link" href="/">Об агентстве</a>
+							<a class="topmenu_link" href="/">Истории успеха</a>
+							<a class="topmenu_link" href="/">Пресс-служба</a>
+							<a class="topmenu_link" href="/">Контакты</a>
+						</div>
+						<div class="breadcrumbs"><a href="/">Главная</a><i class="fa fa-caret-right bc-delimiter" aria-hidden="true"></i><a href="/">Пресс-центр</a><i class="fa fa-caret-right bc-delimiter" aria-hidden="true"></i><span>Новости</span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="news-sidebar">
+							<a class="top" href="/">Новости</a>
+							<a class="bottom" href="/">Фирменный стиль и материалы для скачивания</a>
+						</div>
+					</div>		
+					<div class="col-md-10">
+						<h2 class="detail-header">История успеха: житель Хабаровска создал на &laquo;дальневосточном гектаре&raquo; придорожное кафе</h2>
+					</div>												
+				</div>		
+				<div class="row">
+					<div class="col-md-2">
+						<div class="news-sidebar">
+							<a class="goback" href="/"><i class="fa fa-caret-left" aria-hidden="true"></i> Назад</a>
+						</div>
+					</div>		
+					<div class="col-md-10">
+						<div class="detail-time">28/08/2017</div> 
+						<div class="detail-social">
+							<a href="/" class="social-btn" ><img src="assets/img/social/vk.png"></a>
+							<a href="/" class="social-btn" ><img src="assets/img/social/fb.png"></a>
+							<a href="/" class="social-btn" ><img src="assets/img/social/in.png"></a>
+							<a href="/" class="social-btn" ><img src="assets/img/social/yt.png"></a>
+							<a href="/" class="social-btn" ><img src="assets/img/social/ok.png"></a>
+						</div>
+					</div>												
+				</div>	
+				<div class="row">
+					<div class="col-md-2">
+						&nbsp;
+					</div>		
+					<div class="col-md-10">
+						<div class="detail-cover"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></div>
+						<div class="detail-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at est mollis, vehicula elit quis, tristique odio. Cras vitae sapien mattis, vulputate velit id, faucibus ante. Nullam id cursus dui. Nulla urna justo, dapibus et tincidunt in, rutrum sit amet dolor. Ut sed feugiat ante. Nulla quis metus turpis. Quisque mi est, gravida non sollicitudin in, ultricies quis velit. Sed vitae tellus ex. Duis a egestas dui. Aenean purus nisl, pretium id tincidunt in, gravida quis nibh. Nunc aliquam sagittis neque, et tempus tellus consectetur quis. Donec imperdiet interdum leo pellentesque egestas. Aenean ac eros commodo, ornare lacus eleifend, sodales arcu. Nunc in leo vel augue scelerisque venenatis ac quis velit. Fusce accumsan tincidunt odio a rhoncus.</p>
+						</div>	
+						<div class="detail-text wide">
+							<div class="grid">
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile tall" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile wide" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile tall" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile tall" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile tall" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset1" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+							</div>
+						</div>
+						<div class="detail-text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at est mollis, vehicula elit quis, tristique odio. Cras vitae sapien mattis, vulputate velit id, faucibus ante. Nullam id cursus dui. Nulla urna justo, dapibus et tincidunt in, rutrum sit amet dolor. Ut sed feugiat ante. Nulla quis metus turpis. Quisque mi est, gravida non sollicitudin in, ultricies quis velit. Sed vitae tellus ex. Duis a egestas dui. Aenean purus nisl, pretium id tincidunt in, gravida quis nibh. Nunc aliquam sagittis neque, et tempus tellus consectetur quis. Donec imperdiet interdum leo pellentesque egestas. Aenean ac eros commodo, ornare lacus eleifend, sodales arcu. Nunc in leo vel augue scelerisque venenatis ac quis velit. Fusce accumsan tincidunt odio a rhoncus.</p>
+						</div>	
+						<div class="detail-text wide">
+							<div class="grid">
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile tall" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile wide" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile tall" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile tall" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile tall" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+								<a rel="tileset2" title="Автор: Константин Константинов" class="phototile" href="http://primamedia.today/files/post/medium_8ac39dd.jpg"><img src="http://primamedia.today/files/post/medium_8ac39dd.jpg"></a>
+							</div>
+						</div>
+						
+						<div class="detail-text">
+							<div class="tagblock">Теги: <a href="/">Дальневосточный гектар,</a> <a href="/">Земледелие</a></div>
+							<div class="detail-social bottom">
+								<span>Поделиться новостью</span>
+								<a href="/" class="social-btn" ><img src="assets/img/social/vk.png"></a>
+								<a href="/" class="social-btn" ><img src="assets/img/social/fb.png"></a>
+								<a href="/" class="social-btn" ><img src="assets/img/social/in.png"></a>
+								<a href="/" class="social-btn" ><img src="assets/img/social/yt.png"></a>
+								<a href="/" class="social-btn" ><img src="assets/img/social/ok.png"></a>
+							</div>
+							<a class="goback" href="/"><i class="fa fa-caret-left" aria-hidden="true"></i>К списку новостей</a>
+						</div>
+					</div>												
+				</div>					
+			</div>					
+		</section>
+		<section class="section-related">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="detail-header">Похожие новости</h2>
+					</div>
+				</div>
+				<div class="newsblock-tall">
+					<div class="news-img"><a href="/"><img src="http://primamedia.today/files/post/medium_b2275d3.jpg"></a></div>
+					<div class="news-title">
+						<div class="news-name"><a href="/">Инвестор свободного порта на Чукотке даст Певеку чистую воду</a></div>
+						<div class="news-time">28/08/2017</div>
+					</div>
+				</div>
+				<div class="newsblock-tall">
+					<div class="news-img"><a href="/"><img src="http://primamedia.today/files/post/medium_b2275d3.jpg"></a></div>
+					<div class="news-title">
+						<div class="news-name"><a href="/">Инвестор свободного порта на Чукотке даст Певеку чистую воду</a></div>
+						<div class="news-time">28/08/2017</div>
+					</div>
+				</div>
+				<div class="newsblock-tall">
+					<div class="news-img"><a href="/"><img src="http://primamedia.today/files/post/medium_b2275d3.jpg"></a></div>
+					<div class="news-title">
+						<div class="news-name"><a href="/">Инвестор свободного порта на Чукотке даст Певеку чистую воду</a></div>
+						<div class="news-time">28/08/2017</div>
+					</div>
+				</div>
+				<div class="newsblock-tall">
+					<div class="news-img"><a href="/"><img src="http://primamedia.today/files/post/medium_b2275d3.jpg"></a></div>
+					<div class="news-title">
+						<div class="news-name"><a href="/">Инвестор свободного порта на Чукотке даст Певеку чистую воду</a></div>
+						<div class="news-time">28/08/2017</div>
+					</div>
+				</div>
+				<div class="newsblock-tall">
+					<div class="rss-block">
+						<div>
+							<img src="assets/img/rss.png">
+							<form class="rss-subscribe">
+								<span>Подпишитесь на рассылку</span>
+								<input class="subscribe-email" name="email" placeholder="Ваш e-mail">
+								<label class="subscribe-agree"><input type="checkbox"><span>Я согласен с политикой конфиденциальности</span></label>
+								<label class="subscribe-btn"><input type="submit" style="display: none;"><div class="rss-subscribe-btn">Подписаться</div></label>
+							</form>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</section>
+		<section class="section-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3"><img src="assets/img/logo-white.png"></div>
+					<div class="col-md-3"><a href="/" class="footer-text">Обратитесь за консультацией к нашим специалистам</a></div>
+					<div class="col-md-3"><span class="footer-text" style="font-size: 26px;">8 (800) 301-54-54</span></div>
+					<div class="col-md-3"><div class="footer-question"><a href="/" class="footer-question-btn">Задать вопрос</a></div><a href="#top" class="footer-gotop"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a></div>
+				</div>
+			</div>
+		</section>
+		<section class="section-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a href="/" class="footer-blue">Сервисы</a>
+						<a href="/" class="footer-white">Подобрать персонал</a>
+						<a href="/" class="footer-white">Открыть бизнес</a>
+						<a href="/" class="footer-white">Найти работу</a>
+						<a href="/" class="footer-white">Переехать на Дальний Восток</a>
+						<a href="/" class="footer-white">Узнать о программе &laquo;Дальневосточный Гектар&raquo;</a>
+					</div>
+					<div class="col-md-3">
+						<a href="/" class="footer-blue">Агентство</a>
+						<a href="/" class="footer-white">Об АРЧК ДВ</a>
+						<a href="/" class="footer-white">Наблюдательный совет</a>
+						<a href="/" class="footer-white">Обращение руководителя</a>
+						<a href="/" class="footer-white">Структура</a>
+						<a href="/" class="footer-white">Руководство</a>
+						<a href="/" class="footer-white">Документы</a>
+					</div>
+					<div class="col-md-3">
+						<a href="/" class="footer-blue">Дальний Восток</a>
+						<a href="/" class="footer-white">Социально-экономическая информация</a>
+						<a href="/" class="footer-white">Рынки сбыта</a>
+						<a href="/" class="footer-white">Природные ресурсы</a>
+						<a href="/" class="footer-white">Государственная поддержка</a>
+						<a href="/" class="footer-white">Логистические возможности</a>
+						<a href="/" class="footer-white">Территория опережающего развития</a>
+						<a href="/" class="footer-white">Свободный порт Владивосток</a>
+					</div>
+					<div class="col-md-3">
+						<a href="/" class="footer-blue">Сервисы</a>
+						<a href="/" class="footer-white">Новости</a>
+						<a href="/" class="footer-white">Фирменный стиль и материалы для скачивания</a>
+						<a href="/" class="footer-blue">Исследования</a>
+						<a href="/" class="footer-blue">Истории успеха</a>
+						<a href="/" class="footer-blue">Вопрос-ответ</a>
+						<a href="/" class="footer-blue">Контакты</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6"><p class="footer-text">© Агентство по развитию человеческого капитала на Дальнем Востоке, 2017</p><p class="footer-text">Политика конфиденциальности</p></div>
+					<div class="col-md-3">
+						<a href="/" class="social-btn" ><img src="assets/img/social/vk.png"></a>
+						<a href="/" class="social-btn" ><img src="assets/img/social/fb.png"></a>
+						<a href="/" class="social-btn" ><img src="assets/img/social/in.png"></a>
+						<a href="/" class="social-btn" ><img src="assets/img/social/yt.png"></a>
+						<a href="/" class="social-btn" ><img src="assets/img/social/ok.png"></a>
+					</div>
+					<div class="col-md-3">
+						<a href="/" class="social-btn" ><img src="assets/img/uplab.png" style="position: absolute; right: 0px; bottom: 0px;"></a>
+					</div>
+				</div>				
+			</div>
+		</section>		
+	</body>
+</html>
