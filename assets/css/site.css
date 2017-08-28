@@ -468,6 +468,7 @@ h2.structure-title {
 }
 
 .newsblock-big .news-img img {
+	max-height: 100%;
    position: absolute;
    left: 50%;
    top: 50%;
@@ -501,6 +502,7 @@ h2.structure-title {
 }
 
 .newsblock-tall .news-img img {
+	max-height: 100%;
    position: absolute;
    left: 50%;
    top: 50%;
@@ -534,6 +536,7 @@ h2.structure-title {
 }
 
 .newsblock-wide .news-img img {
+	max-height: 100%;
    position: absolute;
    left: 50%;
    top: 50%;
