@@ -1120,7 +1120,7 @@ h2.detail-header {
 	font-family: Open Sans;
     display: block;
     font-size: 34px;
-    line-height: 28px;
+    line-height: 35px;
 	margin-bottom: 20px;
 	margin-top: 0;
     max-width: 800px;	
@@ -1144,16 +1144,24 @@ h2.detail-header {
 
 .detail-social .social-btn {
     display: inline-block;
-    margin-right: 30px;	
-	opacity: 0.8;
+    margin-right: 30px;
+    opacity: 0.8;
+    position: relative;
+    top: 8px;
 }
 .detail-social .social-btn:hover {
 	opacity: 1;
 }
 
+.detail-social .social-btn img {
+    max-height: 30px;
+	max-width: 30px;
+}
+
 .detail-social.bottom {
 	margin-left: 100px;
-	margin-bottom: 80px
+	margin-bottom: 80px;
+    margin-top: 20px;	
 }
 
 .detail-social.bottom span {
