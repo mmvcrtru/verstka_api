@@ -608,4 +608,17 @@
 	.fancy-btn.right {
 		right: 5px;
 	}	
+	
+	.doc-header {
+		margin: 30px 0;
+	}
+	
+	.doc-block {
+		margin-left: 0px;
+	}
+	
+	.detail-vrezka img {
+		max-width: 100%;
+	}
+	
 }

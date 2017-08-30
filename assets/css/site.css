@@ -1192,11 +1192,15 @@ h2.detail-header {
     font-family: Open Sans;
     font-size: 15px;
     max-width: 760px;
+	font-weight: 300;
 }
 
 .detail-text.wide {
-	font-weight: 300;
     max-width: 920px;
+}
+
+.detail-text.xwide {
+    max-width: 1150px;
 }
 
 .detail-text p {
@@ -1245,6 +1249,10 @@ h2.detail-header {
 
 .detail-text .tagblock a:hover {
 	text-decoration: none;
+}
+
+.detail-vrezka {
+	margin-bottom: 40px;
 }
 
 .gallery-container {
@@ -1740,6 +1748,57 @@ a.board-block:hover .board-name > span {
 
 .grid {
 	padding-bottom: 40px;
+}
+
+.doc-header {
+	display: block;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 55px;
+    margin-top: 80px;
+}
+
+.doc-block {
+    display: block;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    width: 100%;	
+}
+
+.doc-block img {
+	display: inline-block;
+	float: left;
+}
+
+.doc-title {
+    color: #444;
+    display: inline-block;
+    float: left;
+    font-family: open sans;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+.doc-block:hover .doc-title{
+	color: #01A7E5;
+}
+
+.doc-file {
+    color: #888;
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.structure-rarrow {
+    display: inline-block;
+    float: left;
+    left: 30px;
+    margin-right: 120px;
+    position: relative;
+    top: 10px;	
 }
 
 @media (min-width:1400px) {
