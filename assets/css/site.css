@@ -1938,6 +1938,48 @@ p.success_title {
 	width: 100%;
 }
 
+.service-label {
+	margin-bottom: 30px;
+}
+
+.service-label span {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.service-label input[type="text"], .service-label select {
+    height: 40px;
+    width: 310px;	
+}
+
+.service-label input[type="file"] {
+	display: none;
+}
+
+.service-send-again {
+    display: block;
+    margin-top: 20px;
+}
+
+.service-send-again input {
+    height: 10px;
+    width: 65px;
+}
+
+.service-152 span {
+    display: inline;
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+.service-152 {
+	margin-top: 20px;
+}
+
+.service-submit input {
+	display: none;
+}
+
 @media (min-width:1400px) {
 	.container {
 		width: 1440px;
