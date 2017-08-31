@@ -1801,6 +1801,143 @@ a.board-block:hover .board-name > span {
     top: 10px;	
 }
 
+.service-pageblock {
+    background-color: white;
+    display: inline-block;
+    float: left;
+    height: 310px;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    position: relative;
+    width: 25%
+}
+
+.service-pageblock:hover {
+	background-color: #00a7e5;
+	text-decoration: none;
+}
+.service-pageblock:hover span {
+	color: white;
+}
+
+.service-pageblock span {
+    color: black;
+    display: block;
+    font-family: museosans;
+    margin-left: 40px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+.service-pageblock img {
+    bottom: 40px;
+    left: 40px;
+    position: absolute;	
+}
+
+.contact-info {
+	min-height: 100px;
+}
+
+.contact-control {
+	max-width: 400px;
+	margin-bottom: 50px;
+}
+
+.contact-btn {
+	border-radius: 40px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+	cursor: pointer;
+    width: 30%;
+}
+
+.contact-btn span {
+	border-bottom: 1px dashed #00a7e5;
+}
+
+.contact-btn:hover, .contact-btn.active {
+	background-color: white;
+}
+.contact-btn:hover span, .contact-btn.active span {
+	border: none;
+}
+
+.contact-info {
+	margin-bottom: 50px;
+}
+
+#cont_phone {
+    display: inline-block;
+    margin-right: 160px;
+    position: relative;
+}
+#cont_mail {
+	display: inline-block;
+	position: relative;
+}
+
+ #cont_address {
+	position: relative;
+	margin-top: 30px;
+}
+
+.cont-icon { 
+    left: -30px;
+    position: absolute;
+    top: 5px;;
+}
+
+.contact-vrezka {
+    background-color: white;
+    display: block;
+    height: 550px;
+    padding: 60px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 50%;
+}
+
+.cont-vrezka-head {
+	color: #666;
+	margin: 40px 0;
+    padding-bottom: 0 !important;	
+}
+
+.cont-vrezka-line {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 0 !important;
+    position: relative;
+}
+
+p.success_title {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 40px;	
+}
+
+.success-panel {
+    background-color: white;
+    display: block;
+    height: 480px;
+    left: 775px;
+    padding: 50px;
+    position: absolute;
+    top: 30px;
+    width: 380px;	
+}
+
+.success-panel .succ-data {
+	width: 100%;
+}
+
 @media (min-width:1400px) {
 	.container {
 		width: 1440px;
