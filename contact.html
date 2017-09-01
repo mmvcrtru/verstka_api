@@ -108,14 +108,15 @@
 			/*["телефон","e-mail","адрес","ссылка на карту"],*/
 			["+7 (495) 123-45-67","info@hcfe.ru","123317, г. Москва, Пресненская набережная, д. 8, стр. 1<br />Москва Сити, МФК &laquo;Город столиц&raquo;, Северный блок","https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3175.6698273737466!2d37.5367424911176!3d55.74916159277121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504157223622"], /* Москва */
 			["+7 (423) 234-56-78","vladivostok@hcfe.ru","690001, г. Владивосток, ул. Ивановская, д. 1, стр. 1, оф. 111","https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27708.40087625112!2d131.92138389056984!3d43.115297430876936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504164521514"], /* Владивосток */
-			["+7 (123) 456-78-90","khabarovsk@hcfe.ru","123456, г. Хабаровск, ул. Ленинская, д. 2, стр. 2, оф. 222","https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65286.27634266479!2d135.08923892810773!3d48.46023158406781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5efae9c6b0368ac9%3A0xfa97bc0e5fba7f50!2z0KXQsNCx0LDRgNC-0LLRgdC6LCDQpdCw0LHQsNGA0L7QstGB0LrQuNC5INC60YDQsNC5!5e0!3m2!1sru!2sru!4v1504164567381"], /* Хабаровск */
 		];
 		
-		function load_contact(id) {
+		function load_contact(id, btn_on) {
+			$(".contact-btn").removeClass('active');
 			$("#cont_phone span").html(contact_info[id][0]);
 			$("#cont_mail span").html(contact_info[id][1]);
 			$("#cont_address span").html(contact_info[id][2]);
 			$("#cont_map").attr('src',contact_info[id][3]);
+			$(btn_on).addClass('active');
 		}
 		</script>
 		
@@ -140,9 +141,8 @@
 							</div>
 							<p style="font-size: 21px; font-weight: 400; margin-top: 70px;">Офисы агентства</p>
 							<div class="contact-control">
-								<div class="contact-btn active" onClick="load_contact(0)"><span>Москва</span></div>
-								<div class="contact-btn" onClick="load_contact(1)"><span>Владивосток</span></div>
-								<div class="contact-btn" onClick="load_contact(2)"><span>Хабаровск</span></div>
+								<div class="contact-btn active" onClick="load_contact(0,this)"><span>Москва</span></div>
+								<div class="contact-btn" onClick="load_contact(1,this)"><span>Владивосток</span></div>
 							</div>
 							<div class="contact-info">
 								<div id="cont_phone"><img class="cont-icon" src="assets/img/icon_phone.png"><span>+7 (495) 123-45-67</span></div>
@@ -157,7 +157,7 @@
 		<section class="contact-map">
 			<iframe id="cont_map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3175.6698273737466!2d37.5367424911176!3d55.74916159277121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504157223622" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</section>	
-		<section style="background-color: white;">
+		<section style="background-color: white; cursor: pointer;" onClick="$('#cont_form').slideToggle('fast');">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
@@ -169,6 +169,36 @@
 				</div>
 			</div>
 		</section>
+		<section id="cont_form" class="contact-formslide" style="display: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<form>
+							<div class="row">
+								<div class="col-md-7">
+									<div class="row">
+										<div class="col-md-12">
+											<label class="formslide-label"><span>Ваше ФИО</span><input type="text" placeholder="Иван Иванов"><label>
+										</div>
+										<div class="col-md-6">
+											<label class="formslide-label"><span>Номер телефона</span><input type="text" placeholder="+7 (9ХХ) ХХХ-ХХ-ХХ"><label>
+										</div>
+										<div class="col-md-6">
+											<label class="formslide-label"><span>E-Mail</span><input type="text"><label>
+										</div>										
+									</div>
+								</div>
+								<div class="col-md-5">
+									<label class="formslide-label"><span>Сообщение</span><textarea></textarea></label>
+								</div>			
+								<div class="col-md-12">
+									<label class="formslide-submitbtn"><div class="">Отправить</div><input type="submit"></label>
+								</div>										
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>		
 		<section class="section-footer">
 			<div class="container">
 				<div class="row">

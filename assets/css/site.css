@@ -1905,13 +1905,13 @@ a.board-block:hover .board-name > span {
 
 .cont-vrezka-head {
 	color: #666;
-	margin: 40px 0;
+	margin: 30px 0;
     padding-bottom: 0 !important;	
 }
 
 .cont-vrezka-line {
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 10px;
     padding-bottom: 0 !important;
     position: relative;
@@ -1978,6 +1978,45 @@ p.success_title {
 
 .service-submit input {
 	display: none;
+}
+
+.contact-formslide {
+	background-color: #01A7E5;
+}
+
+.formslide-label {
+    width: 100%;
+}
+
+.formslide-label span {
+    display: block;
+    margin: 25px 0 10px;
+    width: 100%;
+	color: white;
+}
+
+.formslide-label textarea {
+	height: 150px;
+    width: 100%;
+}
+
+.formslide-label input {
+	height: 45px;
+    width: 100%;
+}
+
+.formslide-submitbtn input {
+	display:none;
+}
+
+.formslide-submitbtn div {
+    background-color: #333;
+    border-radius: 30px;
+    color: white;
+	cursor: pointer;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
 }
 
 @media (min-width:1400px) {
