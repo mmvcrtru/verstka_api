@@ -121,14 +121,45 @@
 						<div class="detail-text">
 							<div style="padding: 50px 0;">На этой странице вы можете направить в Агентство обращение или жалобу по проекту, реализуемому на Дальнем Востоке. Все обращения или жалобы рассматриваются уполномоченными сотрудниками.</div>
 							<div class="row">
-								<form>
+								<script type="text/javascript">
+									function sendform() {
+										
+										/*
+										if (...) return false; // Делаем проверку полей формы
+										
+										$.ajax(...) // Отправляем форму на сервер
+										*/
+										
+										var type = $("#msg_type").val();
+										var type_text = '';
+										if (type) {
+											type_text = 'Ваша жалоба направлена';
+										} else {
+											type_text = 'Ваше обращение направлено';
+										}
+										$("#submit_type").html(type_text);
+										$("#submit_success").slideDown();
+										
+										return false; // Чтобы форма не отправилась стандартным методом
+									}
+								</script>
+								<form onSubmit="return sendform();">
 									<div class="col-md-6">
-										<label class="service-label"><span>Вид обращения</span><select><option>Жалоба</option><option>Мягкое несогласие</option><option>Яркий протест</option></select></label>
+										<label class="service-label"><span>Вид обращения</span><select id="msg_type"><option value="1">Жалоба</option><option value="2">Обращение</option></select></label>
 										<label class="service-label"><span>ФИО</span><input type="text" placeholder="Иван Иванов"></label>
 										<label class="service-label"><span>Организация</span><input type="text" placeholder="Название"></label>
 									</div>
 									<div class="col-md-6">
-										<label class="service-label"><span>Тематика</span><select><option>Проблемы с производственными</option><option>Проблемы с непроизводственными</option></select></label>
+										<label class="service-label"><span>Тематика</span>
+											<select>
+												<option>Проблемы с земельными ресурсами</option>
+												<option>Проблемы с инфраструктурой</option>
+												<option>Проблемы с производственными объектами</option>
+												<option>Финансовые проблемы</option>
+												<option>Административные проблемы</option>
+												<option>Другое</option>
+											</select>
+										</label>
 										<label class="service-label"><span>Номер телефона</span><input type="text" placeholder="+7 (9ХХ) ХХХ-ХХ-ХХ"></label>
 										<label class="service-label"><span>Электронный адрес</span><input type="text" placeholder="example@example.ru"></label>
 									</div>
@@ -141,9 +172,14 @@
 											<div><input type="radio">Да <input type="radio">Нет</div>
 											</label>
 											<label class="service-152"><input type="checkbox"><span>Отправляя сообщение или жалобу вы соглашаетесь на обработку ваших персональных данных в соответствие с требованиями Федерального закона от 27.07.2006 №152-ФЗ &laquo;О персональных данных&raquo;</span></label>
-											<label class="service-submit"><input type="submit"><div href="/" class="footer-question-btn" style="border: 1px solid black; color: black; width: 250px; margin-top: 20px; cursor: pointer;">Направить запрос</a></div></div></label>
+											<label class="service-submit"><input type="submit"><div href="/" class="footer-question-btn" style="border: 1px solid black; color: black; width: 250px; margin-top: 20px; cursor: pointer;">Направить запрос</a></div></label>
 										</label>
 									</div>
+									<div class="col-md-12">	
+										<div class="sumbit-msg" id="submit_success">
+											<span style="font-weight: bold;"><span id="submit_type"></span> в Агентство.</span><br /><br /><span>Уполномоченный сотрудник свяжется с Вами по контактному телефону или электронной почте для уточнения деталей.</span>
+										</div>
+									</div>									
 								</form>
 							</div>
 						</div>

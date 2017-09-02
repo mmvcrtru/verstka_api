@@ -2044,6 +2044,15 @@ p.success_title {
 	background-color: #76c7e4;
 }
 
+.sumbit-msg {
+	display: none;
+    background-color: #ddd;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 20px;
+	margin-bottom: 30px;
+}
+
 @media (min-width:1400px) {
 	.container {
 		width: 1440px;
