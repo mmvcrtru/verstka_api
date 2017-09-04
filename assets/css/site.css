@@ -1980,6 +1980,19 @@ p.success_title {
 	display: none;
 }
 
+#form_btn {
+	background-color: white;
+	cursor: pointer;
+}
+#form_btn.active {
+	background-color: #01A7E5;
+	color: white;
+}
+
+#cont_form form {
+	margin-bottom: 30px;
+}
+
 .contact-formslide {
 	background-color: #01A7E5;
 }

@@ -118,6 +118,20 @@
 			$("#cont_map").attr('src',contact_info[id][3]);
 			$(btn_on).addClass('active');
 		}
+		
+		function slide_form(dir) {
+			if (dir == 'down') {
+				$('#form_btn').attr("onclick", "slide_form('up')");
+				$('#form_btn').addClass('active');
+				$('#form_btn_img').attr("src","assets/img/btn_close_form.png");
+				$('#cont_form').slideDown('fast');
+			} else {
+				$('#form_btn').attr("onclick", "slide_form('down')");
+				$("#form_btn").removeClass('active');
+				$('#form_btn_img').attr("src","assets/img/arrow_down.png");
+				$('#cont_form').slideUp('fast');
+			}
+		}
 		</script>
 		
 		<section>
@@ -157,14 +171,14 @@
 		<section class="contact-map">
 			<iframe id="cont_map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3175.6698273737466!2d37.5367424911176!3d55.74916159277121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504157223622" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</section>	
-		<section style="background-color: white; cursor: pointer;" onClick="$('#cont_form').slideToggle('fast');">
+		<section id="form_btn" onClick="slide_form('down');">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
 						<span style="font-size: 25px; display: block; padding: 40px 0px;">Написать нам</span>
 					</div>
 					<div class="col-md-3">
-						<img style="padding-top: 30px;" src="assets/img/arrow_down.png">
+						<img id="form_btn_img" style="padding-top: 30px;" src="assets/img/arrow_down.png">
 					</div>
 				</div>
 			</div>
@@ -172,7 +186,8 @@
 		<section id="cont_form" class="contact-formslide" style="display: none;">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
 						<form>
 							<div class="row">
 								<div class="col-md-7">
@@ -194,9 +209,10 @@
 								<div class="col-md-12">
 									<label class="formslide-submitbtn"><div class="">Отправить</div><input type="submit"></label>
 								</div>										
+							</div>
 						</form>
 					</div>
-				</div>
+					<div class="col-md-2"></div>
 			</div>
 		</section>		
 		<section class="section-footer">
