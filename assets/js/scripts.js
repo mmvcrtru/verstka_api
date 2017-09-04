@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 function mmenu_toggle() {
 	if (menu_visible) {
-		$('#mobile_menu').css('left','-100%');
+		$('#mobile_menu').css('left','-300%');
 		menu_visible = false;
 	} else {
 		$('#mobile_menu').css('left','0');		

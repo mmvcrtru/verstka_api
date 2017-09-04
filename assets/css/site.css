@@ -17,8 +17,7 @@ a {
 #mobile_menu {
 	position: fixed;
 	top: 0;
-	left: -100%;
-	width: 100%;
+	left: -300%;
 	height: 100%;
 	z-index: 3;
 	transition: all 0.3s ease 0s;
