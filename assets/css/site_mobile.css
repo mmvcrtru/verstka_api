@@ -621,4 +621,8 @@
 		max-width: 100%;
 	}
 	
+	.pagination-block {
+		text-align: center;
+	}
+	
 }

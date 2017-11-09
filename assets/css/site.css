@@ -2066,6 +2066,85 @@ p.success_title {
 	margin-bottom: 30px;
 }
 
+.search-form {
+	height: 42px;
+	border: 1px solid #01A7E5;
+	border-radius: 30px;
+	overflow: hidden;
+	background-color: #01A7E5;
+}
+
+.search-query {
+	width: 76%;
+	height: 40px;
+	padding-left: 20px;
+	border: none;
+	font-size: 17px;
+}
+
+.search-btn {
+	width: 20%;
+	height: 42px;
+	text-align: center;
+}
+
+.search-btn div {
+	color: white;
+	font-weight: 500;
+	font-size: 17px;
+	cursor: pointer;
+	padding: 8px;
+}
+
+.search-btn input {
+	display: none;
+}
+
+.search-rescount {
+	color: #797979;
+	padding-top: 14px;
+	font-size: 12px;
+	float: right;
+}
+
+.pagination-block {
+	font-weight: bold;
+	color: #333;
+	margin: 25px 0 70px 0;
+}
+
+.pagination-block span {
+	margin: 0 5px;
+	color: #01A7E5;
+}
+
+.pagination-block .page-number {
+	color: #333;
+	margin: 0 5px;
+}
+
+.pagination-block .page-number:hover {
+	color: #01A7E5;
+	text-decoration: none;
+}
+
+.pagination-block .page-btn {
+	color: #333;
+	padding: 3px 11px;
+	border: 1px solid #333;
+	border-radius: 30px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	font-size: 21px;
+	margin: 0 15px;
+}
+
+.pagination-block .page-btn:hover {
+	color: #01A7E5;
+	border: 1px solid #01A7E5;
+}
+
 @media (min-width:1400px) {
 	.container {
 		width: 1440px;
