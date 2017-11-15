@@ -1996,7 +1996,8 @@ p.success_title {
 
 .service-label input[type="text"], .service-label select {
     height: 40px;
-    width: 310px;	
+    width: 310px;
+	padding: 0 20px;	
 }
 
 .service-label input[type="file"] {
@@ -2190,6 +2191,15 @@ p.success_title {
 .pagination-block .page-btn:hover {
 	color: #01A7E5;
 	border: 1px solid #01A7E5;
+}
+
+.service-submit .footer-question-btn {
+	background-color: #01A7E5;
+	color: white;
+	height: 60px;
+	font-size: 12px;
+	padding-top: 20px;
+	line-height: 18px;
 }
 
 @media (min-width:1400px) {
