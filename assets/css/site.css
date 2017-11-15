@@ -1237,6 +1237,14 @@ h2.detail-header {
     width: 100%;
 }
 
+.detail-text blockquote > .quote_author_upper {
+    color: #999;
+    display: inline-block;
+    font-style: normal;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
 .detail-text h3 {
     line-height: 37px;
     padding-bottom: 25px;
@@ -1928,15 +1936,53 @@ p.success_title {
     background-color: white;
     display: block;
     height: 480px;
-    left: 775px;
+    left: 795px;
     padding: 50px;
     position: absolute;
     top: 30px;
-    width: 380px;	
+    width: 360px;	
 }
 
 .success-panel .succ-data {
 	width: 100%;
+	height: 25%;
+	margin-top: 12px;
+}
+
+.success-panel .succ-data .descr {
+	display: block;
+	width: 65%;
+	height: 100%;
+	float: right;
+}
+
+.success-panel .succ-data .num {
+	height: 100%;
+	color: black;
+	width: 33%;
+	float: left;
+	text-align: right;
+	font-family: Open Sans;
+}
+
+.success-panel .succ-data .num .upperline {
+	font-size: 20px;
+	position: relative;
+	top: -10px;
+}
+
+.success-panel .succ-data .descr .measure {
+	font-weight: bold;
+	color: black;
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+
+.success-panel .succ-data .descr .what {
+	font-family: Open Sans;
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: inherit;
 }
 
 .service-label {
